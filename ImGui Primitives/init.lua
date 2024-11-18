@@ -49,7 +49,9 @@ local function DoTestRectFilled()
         imgui.AddRectFilled(
             xStart + 100, yStart + 100, -- a
             xStart + 300, yStart + 300, -- b
-            0x7F7F002F) -- color
+            0x7F7F002F, -- color
+            1.0, -- optional rounding
+            0xF) -- optional rounding corners bitmask
         imgui.End()
     end
 end
